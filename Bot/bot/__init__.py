@@ -17,6 +17,8 @@ def start():
 
     middlewares.setup(dp)
 
+    handlers.info.setup(dp)
+
     executor.start_polling(dp, on_startup=on_startup, skip_updates=True)
 
 
